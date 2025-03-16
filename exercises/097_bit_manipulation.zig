@@ -70,7 +70,6 @@ const std = @import("std");
 const print = std.debug.print;
 
 pub fn main() !void {
-
     // As in the example above, we use 1 and 0 as values for x and y
     var x: u8 = 1;
     var y: u8 = 0;
@@ -80,7 +79,7 @@ pub fn main() !void {
     y ^= x;
 
     // What must be written here?
-    ???;
+    x ^= y;
 
     print("x = {d}; y = {d}\n", .{ x, y });
 }
